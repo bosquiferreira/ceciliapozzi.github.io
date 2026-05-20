@@ -8,7 +8,7 @@
 
 <link rel="canonical" href="{{ page.url }}">
 
-<meta property="og:locale" content="es_ES">
+<meta property="og:locale" content="en_US">
 <meta property="og:type" content="{{ ogType or 'website' }}">
 <meta property="og:title" content="{{ pageTitle }}">
 <meta property="og:description" content="{{ description or site.description }}">
@@ -62,13 +62,3 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap">
 
 <link rel="stylesheet" href="{{ '/assets/css/styles.css' }}">
-
-{% if site.gtmId %}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gtmId }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ site.gtmId }}');
-</script>
-{% endif %}
